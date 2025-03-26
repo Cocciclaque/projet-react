@@ -6,7 +6,7 @@ function WeatherComponent(date){
     const { data: weather, isLoading, error } = useQueryWeather(day);
 
     if (error) {
-        return <div> {error.message} </div>;
+        return <div> Erreur lors du chargement, réessayez plus tard ! </div>;
     }
 
     if (isLoading) {
